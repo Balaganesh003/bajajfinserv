@@ -108,7 +108,7 @@ function App() {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v4m0 4h.01M21 12.9a9 9 0 10-18 0A9 9 0 0021 12.9z"></path>
             </svg>
             <p class="text-gray-700 text-sm">
-                Please note that the backend has been<b> redeployed on Render's free tier.</b> As a result, it may<b> take between 30 to 45 seconds for the backend to respond initially </b>. Thank you for your patience!
+                Please note that the backend has been<b> deployed on Render's free tier.</b> As a result, it may<b> take between 30 to 45 seconds for the backend to respond initially </b>. Thank you for your patience!
             <br />
                 For more details, you can check the code repository:
                 <a href="https://github.com/Balaganesh003/bajajfinserv" target="_blank" class="text-blue-500 hover:underline">Bajaj Finserv Repository</a>.
