@@ -69,7 +69,10 @@ function App() {
   };
 
   return (
-    <div className="container mx-auto max-w-2xl p-4">
+    <div>
+
+    <div className="container mx-auto max-w-2xl p-4 mb-[150px]">
+
       <h1 className="text-3xl font-bold text-center mb-6">Bajaj Finserv Challenge</h1>
       <form onSubmit={handleSubmit} className="mb-6">
         <textarea
@@ -98,6 +101,20 @@ function App() {
       </div>
       {renderFilteredResponse()}
       <ToastContainer />
+      </div>
+      <div class="fixed bottom-4 flex justify-center mx-5 bg-white border border-gray-300 rounded-lg shadow-md p-4">
+         <div class="flex items-center space-x-2">
+            <svg class="w-10 h- text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v4m0 4h.01M21 12.9a9 9 0 10-18 0A9 9 0 0021 12.9z"></path>
+            </svg>
+            <p class="text-gray-700 text-sm">
+                Please note that the backend has been<b> redeployed on Render's free tier.</b> As a result, it may<b> take between 30 to 45 seconds for the backend to respond initially </b>. Thank you for your patience!
+            <br />
+                For more details, you can check the code repository:
+                <a href="https://github.com/Balaganesh003/bajajfinserv" target="_blank" class="text-blue-500 hover:underline">Bajaj Finserv Repository</a>.
+            </p>
+        </div>
+    </div>
     </div>
   );
 }
