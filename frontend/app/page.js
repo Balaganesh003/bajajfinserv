@@ -86,18 +86,16 @@ function App() {
           Submit
         </button>
       </form>
-      {response && (
-        <div className="mb-4">
-          <h3 className="font-bold mb-2">Select filters:</h3>
-          <Select
-            isMulti
-            options={filterOptions}
-            onChange={(selected) => setSelectedFilters(selected.map(option => option.value))}
-            className="basic-multi-select"
-            classNamePrefix="select"
-          />
-        </div>
-      )}
+      <div className="mb-4">
+        <h3 className="font-bold mb-2">Select filters:</h3>
+        <Select
+          isMulti
+          options={filterOptions}
+          onChange={(selected) => setSelectedFilters(selected.map(option => option.value))}
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
+      </div>
       {renderFilteredResponse()}
       <ToastContainer />
     </div>
