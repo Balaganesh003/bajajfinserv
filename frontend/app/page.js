@@ -14,14 +14,14 @@ function App() {
   const [input, setInput] = useState('');
   const [response, setResponse] = useState(null);
   const [selectedFilters, setSelectedFilters] = useState([]);
-  const [loading, setLoading] = useState(false);  // Loading state for the button
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Set loading to true when the form is submitted
+    setLoading(true);
 
     try {
-      // Validate JSON format
+
       const parsedInput = JSON.parse(input);
 
       if (!parsedInput.data || !Array.isArray(parsedInput.data)) {
@@ -46,7 +46,7 @@ function App() {
     } catch (err) {
       toast.error(err.message);
     } finally {
-      setLoading(false); // Set loading to false after the request completes
+      setLoading(false);
     }
   };
 
