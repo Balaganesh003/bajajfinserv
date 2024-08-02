@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
 
-app.use('/bajaj', bajajRouter);
+app.use('/bfhl', bajajRouter);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
