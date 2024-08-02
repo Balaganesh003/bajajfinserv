@@ -67,7 +67,7 @@ function App() {
 
   return (
     <div className="container mx-auto max-w-2xl p-4">
-      <h1 className="text-3xl font-bold text-center mb-6">BFHL Challenge</h1>
+      <h1 className="text-3xl font-bold text-center mb-6">Bajaj Finserv Challenge</h1>
       <form onSubmit={handleSubmit} className="mb-6">
         <textarea
           className="w-full p-2 border rounded mb-4"
