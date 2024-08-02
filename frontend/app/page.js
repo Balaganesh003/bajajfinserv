@@ -51,7 +51,7 @@ function App() {
 
     return (
       <div className="mt-4 p-4 bg-gray-100 rounded-lg">
-        <h3 className="font-bold mb-2">Filtered Response:</h3>
+        <h3 className="font-bold mb-5 text-xl">Filtered Response:</h3>
         {selectedFilters.includes('Alphabets') && (
           <p>Alphabets: {response.alphabets.join(', ')}</p>
         )}
@@ -60,6 +60,9 @@ function App() {
         )}
         {selectedFilters.includes('Highest alphabet') && (
           <p>Highest Alphabet: {response.highest_alphabet[0]}</p>
+        ) }
+        { selectedFilters.length === 0 && (
+          <p className='text-center font-semibold'>No filters selected</p>
         )}
       </div>
     );
