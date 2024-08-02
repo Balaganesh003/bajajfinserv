@@ -96,7 +96,7 @@ function App() {
         </div>
       )}
       {renderFilteredResponse()}
-      <ToastContainer position="bottom-right" />
+      <ToastContainer />
     </div>
   );
 }
