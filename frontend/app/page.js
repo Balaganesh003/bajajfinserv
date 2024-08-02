@@ -70,7 +70,7 @@ function App() {
       <h1 className="text-3xl font-bold text-center mb-6">Bajaj Finserv Challenge</h1>
       <form onSubmit={handleSubmit} className="mb-6">
         <textarea
-          className="w-full p-2 border rounded mb-4"
+          className="w-full p-2 border border-gray-400 rounded mb-4 shadow-sm outline-blue-500"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder='Enter JSON input (e.g., { "data": ["A","C","z"] })'
